@@ -10,3 +10,9 @@ typedef struct {
   ElemType data[MAXSIZE];
   int length;
 }SqList;
+
+typedef struct {
+  ElemType data;
+  strcut Node *next
+} Node;
+typdef struct Node *LinkList;
