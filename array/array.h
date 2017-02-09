@@ -9,7 +9,7 @@ typedef int ElemType;
 typedef struct {
   ElemType data[MAXSIZE];
   int length;
-}SqList;
+} SqList;
 
 typedef struct {
   ElemType data;
