@@ -3,6 +3,7 @@
  */
 
 #include "array.h"
+#include "list.h"
 
 Status sll_insert(StaticLinkList L, int i, ElemType e) {
   int i, k, l;
