@@ -21,5 +21,3 @@ typedef struct {
   ElemType data;
   int cur;
 } Component, StaticLinkList[MAXSIZE];
-
-int malloc_ssl();
