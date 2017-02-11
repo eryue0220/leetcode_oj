@@ -16,3 +16,10 @@ typedef struct {
   strcut Node *next
 } Node;
 typdef struct Node *LinkList;
+
+typedef struct {
+  ElemType data;
+  int cur;
+} Component, StaticLinkList[MAXSIZE];
+
+int malloc_ssl();
