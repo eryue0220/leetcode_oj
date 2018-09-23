@@ -9,10 +9,8 @@
 var twoSum = function(nums, target) {
 	var i = 0;
 	var length = nums.length;
-	var pivot;
 
 	for (; i < length; i++) {
-		pivot = nums[i];
 		for (var j = i + 1; j <= length; j++) {
 			if (nums[i] + nums[j] === target) {
 				return [i, j]
