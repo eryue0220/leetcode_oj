@@ -28,7 +28,7 @@ var middleNode = function(head) {
   var start = [head];
 
   while (start[start.length - 1].next != null)
-    start.puhs(start[start.length - 1].next);
+    start.push(start[start.length - 1].next);
 
   return start[Math.trunc(start.length - 1) / 2];
 }
