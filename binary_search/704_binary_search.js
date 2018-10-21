@@ -16,8 +16,3 @@ var search = function(nums, target) {
 
   return -1;
 };
-
-const res = search([-1,0,3,5,9,12], 9);
-const res1 = search([-1,0,3,5,9,12], 2);
-console.log(res);
-console.log(res1);
