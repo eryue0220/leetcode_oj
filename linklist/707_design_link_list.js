@@ -26,7 +26,6 @@ class LinkedList {
   }
 
   addAtHead(val) {
-    this.length += 1;
     if (this.val == null) {
       this.val = val;
       return;
@@ -34,6 +33,7 @@ class LinkedList {
 
     const oldVal = this.val;
     const oldNext = this.next;
+    this.length += 1;
     this.val = val;
     this.next = {
       val: oldVal,
@@ -42,7 +42,6 @@ class LinkedList {
   }
 
   addAtTail(val) {
-    this.length += 1;
     if (this.val == null) {
       this.val = val;
       return;
@@ -53,6 +52,7 @@ class LinkedList {
       tail = tail.next;
     }
 
+    this.length += 1;
     tail.next = {
       val: val,
       next: null
@@ -115,4 +115,3 @@ class LinkedList {
 }
 
 module.exports = LinkedList;
-

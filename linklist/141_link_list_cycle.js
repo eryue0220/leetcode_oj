@@ -23,3 +23,22 @@ var hasCycle = function(head) {
 
   return false;
 };
+
+var hasCycleBetter = function(head) {
+  if (head == null) return false;
+  var slow;
+  var fast;
+
+  if (head && head.next && head.next.next) {
+    slow = head.next;
+    fast = head.next.next;
+  }
+
+  while (fast && fast.next) {
+    if (slow === fast) return true;
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+
+  return false;
+};
