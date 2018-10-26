@@ -22,6 +22,3 @@ var twoSumBetter = function(numbers, target) {
     result[numbers[i]] = i;
   }
 };
-
-var result = twoSumBetter([2,7,11,15], 9);
-console.log(result);

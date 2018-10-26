@@ -30,6 +30,3 @@ var twoSumBetter = function(nums, target) {
     result[nums[i]] = i;
   }
 };
-
-var result = twoSum([2, 7, 11, 15], 9);
-console.log(result);
