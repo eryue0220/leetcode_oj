@@ -19,5 +19,17 @@ var twoSum = function(nums, target) {
 	}
 };
 
+var twoSumBetter = function(nums, target) {
+  var i = 0;
+  var length = nums.length;
+  var result = {};
+
+  for (; i < length; i++) {
+    var diff = target - nums[i]
+    if (result[diff]) return [result[diff], i];
+    result[nums[i]] = i;
+  }
+};
+
 var result = twoSum([2, 7, 11, 15], 9);
 console.log(result);
